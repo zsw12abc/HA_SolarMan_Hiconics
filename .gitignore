@@ -21,3 +21,5 @@ env/
 # === 5. 操作系统杂项 ===
 .DS_Store
 Thumbs.db
+zero_scan_result.txt
+priority_scan_result.txt
