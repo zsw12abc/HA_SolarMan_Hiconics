@@ -7,17 +7,15 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src import utils
 from src.constants import PRIORITY_ADDRESSES
+from src.zero_addresses import ZERO_ADDRESSES
 
 SEARCH_TIMEOUT = 300  # 搜索超时时间
 
 def main():
     client = utils.get_client()
 
-    # 计算低优先级地址
-    zero_addresses = []
-    for addr in range(0x3000, 0x3B00):
-        if addr not in PRIORITY_ADDRESSES:
-            zero_addresses.append(addr)
+    # 直接使用从 zero_addresses.py 导入的列表
+    zero_addresses = ZERO_ADDRESSES
 
     print(f"📋 [阶段1] 正在快速扫描 {len(PRIORITY_ADDRESSES)} 个有效数据点 (High Priority)...")
     utils.print_header()
