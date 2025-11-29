@@ -11,7 +11,7 @@ from src.constants import PRIORITY_ADDRESSES
 from src.zero_addresses import ZERO_ADDRESSES
 
 # --- 配置 ---
-SEARCH_TIMEOUT = 300  # 搜索超时时间
+SEARCH_TIMEOUT = 600  # 搜索超时时间
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONSTANTS_PATH = os.path.join(PROJECT_ROOT, "src", "constants.py")
 ZERO_ADDRESSES_PATH = os.path.join(PROJECT_ROOT, "src", "zero_addresses.py")
