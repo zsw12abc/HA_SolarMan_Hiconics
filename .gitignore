@@ -1,0 +1,23 @@
+# === 1. 核心隐私保护 (绝对不能上传) ===
+.env
+
+# === 2. PyCharm IDE 生成文件 ===
+# 忽略整个 .idea 文件夹 (存放项目配置、窗口布局等)
+.idea/
+# 忽略 PyCharm 的模块文件
+*.iml
+
+# === 3. Python 编译与缓存文件 ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# === 4. 虚拟环境 (通常 PyCharm 会自动创建 venv) ===
+venv/
+.venv/
+env/
+
+# === 5. 操作系统杂项 ===
+.DS_Store
+Thumbs.db
