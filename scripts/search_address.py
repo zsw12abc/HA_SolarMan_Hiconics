@@ -1,4 +1,10 @@
-import utils
+import sys
+import os
+
+# 将项目根目录添加到 sys.path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from src import utils
 
 # 扫描范围
 START_ADDR = 0x3000

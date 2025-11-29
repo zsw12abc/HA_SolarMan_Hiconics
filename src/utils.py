@@ -1,5 +1,5 @@
 from pysolarmanv5 import PySolarmanV5
-import config
+from src import config
 
 def get_client(verbose=False):
     """创建并返回连接客户端"""

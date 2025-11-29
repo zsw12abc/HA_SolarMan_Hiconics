@@ -1,0 +1,2 @@
+python-dotenv
+pysolarmanv5

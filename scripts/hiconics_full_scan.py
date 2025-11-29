@@ -1,6 +1,12 @@
+import sys
+import os
 import time
-import utils
-from constants import PRIORITY_ADDRESSES
+
+# 将项目根目录添加到 sys.path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from src import utils
+from src.constants import PRIORITY_ADDRESSES
 
 SEARCH_TIMEOUT = 300  # 搜索超时时间
 
